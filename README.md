@@ -52,10 +52,6 @@ Visit: `http://<your-computer-ip>:5000` on any device on the same Wi-Fi.
 
 ---
 
-## 📸 Demo Screenshot / GIF
-*(Add demo images or videos here)*
-
----
 
 ## 💡 Future Improvements
 - Face recognition for auto-authorize

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Entry Monitor</title>
+</head>
+<body>
+    <h1>Smart Entry Monitor</h1>
+    <button onclick="sendCommand('yes')">Accept</button>
+    <button onclick="sendCommand('no')">Deny</button>
+    <script>
+        function sendCommand(action) {
+            fetch('/led', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ action: action })
+            }).then(res => res.json()).then(data => alert(JSON.stringify(data)));
+        }
+    </script>
+</body>
+</html>
